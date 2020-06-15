@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Book List</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta charset = "utf-8" />
+            <link href="book.css" rel="stylesheet" type="text/css" />
+        </head>
+
+        <body>
+            <div id="container">
+
+                <div id="header">
+                    <h1>My<span>Book</span>List</h1>
+                    <p></p>
+                </div>
+
+                <form id="content">
+                   <div class="form">
+                        <input type="text" name="name" id="name" autocomplete="off" required />
+                        <label for="name" class="label-name">
+                            <span class="content-name">Name</span>
+                        </label>                        
+                   </div>
+                    <div class='form'>
+                         <input type="text" name="author" id="author" autocomplete="off" required />
+                        <label for="author" class="label-name">
+                                <span class="content-name">Author</span>
+                        </label>                        
+                    </div>
+                    <div class='form'>
+                        <input type="text" name="text" id="isbn" autocomplete="off" required />
+                        <label for="isbn" class="label-name">
+                            <span class="content-name">Isbn</span>
+                        </label>                        
+                    </div>
+
+                    <input type="submit" value="Add Book" id="submit" />
+                </form>
+
+                <div id="table">
+                    <table class="table">
+                        <thead>
+                            <th >Title</th>
+                            <th>Author</th>
+                            <th>ISBN</th>
+                            <th class="delete"></th>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+            <script src="app.js"></script>
+        </body>
+    </html>
